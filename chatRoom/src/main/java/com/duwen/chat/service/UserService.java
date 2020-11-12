@@ -2,6 +2,8 @@ package com.duwen.chat.service;
 
 import com.duwen.chat.dto.User;
 
+import java.util.List;
+
 /**
  * @author duwen.fu
  * @version 1.0
@@ -9,5 +11,7 @@ import com.duwen.chat.dto.User;
  */
 public interface UserService {
 
-    void insert(User user);
+    String insert(User user);
+
+    List<User> select();
 }

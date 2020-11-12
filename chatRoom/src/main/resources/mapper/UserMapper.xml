@@ -15,4 +15,9 @@
         insert into user(USER_NAME,PASSWORD,USER_CODE,SIGNATURE,PHONE)
         values(#{userName}.#{password},#{userCode},#{signature},#{phone})
     </insert>
+
+    <select id="select" resultType="com.duwen.chat.dto.User">
+        select *
+        from user
+    </select>
 </mapper>
