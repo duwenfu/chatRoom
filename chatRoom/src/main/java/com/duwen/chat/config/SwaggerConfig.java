@@ -25,7 +25,7 @@ public class SwaggerConfig {
     @Bean
     public Docket createRestApi() {
         return new Docket(DocumentationType.SWAGGER_2).apiInfo(apiInfo()).select()
-                .apis(RequestHandlerSelectors.basePackage("com.imooc.miaosha.controller"))
+                .apis(RequestHandlerSelectors.basePackage("com.duwen.chat.controller"))
                 .paths(PathSelectors.any()).build();
     }
 

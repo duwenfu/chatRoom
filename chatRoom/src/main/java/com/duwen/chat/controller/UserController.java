@@ -18,7 +18,7 @@ import java.util.List;
  * @version 1.0
  * @date 2020/11/12 18:45
  */
-@Api
+@Api(value = "用户模块")
 @RestController
 @RequestMapping("/login")
 public class UserController{
@@ -30,7 +30,7 @@ public class UserController{
      * 用户注册
      */
     @ApiOperation("用户注册")
-    @RequestMapping("/tt")
+    @RequestMapping(value = "/tt",method = RequestMethod.PUT)
     public void register(@RequestBody User user){
         userService.insert(user);
     }
@@ -38,8 +38,9 @@ public class UserController{
     /**
      * 用户信息查询
      */
+    @ApiOperation(value = "获取用户信息")
     @ResponseBody
-    @RequestMapping("/get")
+    @GetMapping("/get")
     public String get(){
         List<User> user = userService.select();
         user.toString();
