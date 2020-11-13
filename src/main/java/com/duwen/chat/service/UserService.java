@@ -11,7 +11,7 @@ import java.util.List;
  */
 public interface UserService {
 
-    String insert(User user);
+    void insert(User user);
 
     List<User> select();
 }

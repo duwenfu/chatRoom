@@ -39,7 +39,6 @@ public class UserController{
     @GetMapping("/get")
     public String get(){
         List<User> user = userService.select();
-        user.toString();
-        return "1";
+        return user.toString();
     }
 }

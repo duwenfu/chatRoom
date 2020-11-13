@@ -1,11 +1,16 @@
 package com.duwen.chat.dto;
 
 
+import lombok.Getter;
+import lombok.Setter;
+
 /**
  * @author duwen.fu
  * @version 1.0
  * @date 2020/11/12 18:37
  */
+@Setter
+@Getter
 public class User {
     /**
      * 用户id
@@ -36,54 +41,6 @@ public class User {
      * 电话号码
      */
     private String phone;
-
-    public String getPhone() {
-        return phone;
-    }
-
-    public void setPhone(String phone) {
-        this.phone = phone;
-    }
-
-    public String getSignature() {
-        return signature;
-    }
-
-    public void setSignature(String signature) {
-        this.signature = signature;
-    }
-
-    public String getUserCode() {
-        return userCode;
-    }
-
-    public void setUserCode(String userCode) {
-        this.userCode = userCode;
-    }
-
-    public String getUserName() {
-        return userName;
-    }
-
-    public void setUserName(String userName) {
-        this.userName = userName;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
-    public Long getUserId() {
-        return userId;
-    }
-
-    public void setUserId(Long userId) {
-        this.userId = userId;
-    }
 
     @Override
     public String toString() {
