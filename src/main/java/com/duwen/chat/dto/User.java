@@ -1,6 +1,5 @@
 package com.duwen.chat.dto;
 
-import javax.annotation.Resource;
 
 /**
  * @author duwen.fu

@@ -1,16 +1,12 @@
 package com.duwen.chat.controller;
 
 import com.duwen.chat.dto.User;
-import com.duwen.chat.mapper.UserMapper;
 import com.duwen.chat.service.UserService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
-import javax.annotation.Resource;
-import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 /**
@@ -20,7 +16,7 @@ import java.util.List;
  */
 @Api(value = "用户模块")
 @RestController
-@RequestMapping("/login")
+@RequestMapping("/user")
 public class UserController{
 
     @Autowired
@@ -30,7 +26,7 @@ public class UserController{
      * 用户注册
      */
     @ApiOperation("用户注册")
-    @RequestMapping(value = "/tt",method = RequestMethod.PUT)
+    @RequestMapping(value = "/login",method = RequestMethod.PUT)
     public void register(@RequestBody User user){
         userService.insert(user);
     }
