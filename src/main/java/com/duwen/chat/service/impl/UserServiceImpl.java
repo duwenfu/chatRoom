@@ -18,10 +18,12 @@ public class UserServiceImpl implements UserService {
 
     @Autowired
     private UserMapper userMapper;
+
     @Override
     public void insert(User user){
          userMapper.register(user);
     }
+
     @Override
     public List<User> select(){
         return userMapper.select();

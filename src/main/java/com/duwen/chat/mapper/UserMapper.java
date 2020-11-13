@@ -16,13 +16,13 @@ public interface UserMapper {
     /**
      * 用户注册
      * @author duwen.fu
-     * @param user
+     * @param user 用户信息
      */
     void register(@Param("user") User user);
 
     /**
      * 用户查询
-     * @return
+     * @return 用户列表
      */
     List<User> select();
 }

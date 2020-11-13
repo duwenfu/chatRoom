@@ -20,7 +20,9 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @EnableSwagger2
 public class SwaggerConfig {
     /**
-     * @Description:swagger2的配置文件，这里可以配置swagger2的一些基本的内容，比如扫描的包等等
+     * <p>
+     *     swagger2的配置文件，这里可以配置swagger2的一些基本的内容，比如扫描的包等等
+     * </p>
      */
     @Bean
     public Docket createRestApi() {
@@ -30,7 +32,9 @@ public class SwaggerConfig {
     }
 
     /**
-     * @Description: 构建 api文档的信息
+     * <p>
+     *     构建 api文档的信息
+     * </p>
      */
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
