@@ -44,6 +44,6 @@ public class User {
 
     @Override
     public String toString() {
-        return "31312";
+        return "用户" + userName + "的个性签名是：" + signature;
     }
 }
