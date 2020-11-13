@@ -19,21 +19,11 @@ public class UserServiceImpl implements UserService {
     @Autowired
     private UserMapper userMapper;
 
-    /**
-     * 用户注册
-     * @author duwen.fu
-     * @param user 用户
-     */
     @Override
     public void insert(User user){
          userMapper.register(user);
     }
 
-    /**
-     * 查询用户
-     * @author duwen.fu
-     * @return List<User>
-     */
     @Override
     public List<User> select(){
         return userMapper.select();
