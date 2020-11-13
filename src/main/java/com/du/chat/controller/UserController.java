@@ -22,18 +22,12 @@ public class UserController{
     @Autowired
     private UserService userService;
 
-    /**
-     * 用户注册
-     */
     @ApiOperation("用户注册")
     @RequestMapping(value = "/login",method = RequestMethod.PUT)
     public void register(@RequestBody User user){
         userService.insert(user);
     }
 
-    /**
-     * 用户信息查询
-     */
     @ApiOperation(value = "获取用户信息")
     @ResponseBody
     @GetMapping("/get")
