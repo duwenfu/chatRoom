@@ -1,4 +1,4 @@
-package com.duwen.chat.config;
+package com.du.chat.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -27,7 +27,7 @@ public class SwaggerConfig {
     @Bean
     public Docket createRestApi() {
         return new Docket(DocumentationType.SWAGGER_2).apiInfo(apiInfo()).select()
-                .apis(RequestHandlerSelectors.basePackage("com.duwen.chat.controller"))
+                .apis(RequestHandlerSelectors.basePackage("com.du.chat.controller"))
                 .paths(PathSelectors.any()).build();
     }
 

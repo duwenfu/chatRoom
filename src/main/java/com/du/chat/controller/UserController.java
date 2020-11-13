@@ -1,7 +1,7 @@
-package com.duwen.chat.controller;
+package com.du.chat.controller;
 
-import com.duwen.chat.dto.User;
-import com.duwen.chat.service.UserService;
+import com.du.chat.dto.User;
+import com.du.chat.service.UserService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;

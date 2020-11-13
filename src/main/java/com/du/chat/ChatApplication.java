@@ -1,4 +1,4 @@
-package com.duwen.chat;
+package com.du.chat;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
@@ -8,7 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @version 1.0
  * @date 2020/11/12 18:42
  */
-@MapperScan("com.duwen.chat.mapper")
+@MapperScan("com.du.chat.mapper")
 @SpringBootApplication
 public class ChatApplication {
 

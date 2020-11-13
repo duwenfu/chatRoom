@@ -1,4 +1,4 @@
-package com.duwen.chat.dto;
+package com.du.chat.dto;
 
 
 import lombok.Getter;

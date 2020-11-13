@@ -1,6 +1,6 @@
-package com.duwen.chat.mapper;
+package com.du.chat.mapper;
 
-import com.duwen.chat.dto.User;
+import com.du.chat.dto.User;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 import java.util.List;

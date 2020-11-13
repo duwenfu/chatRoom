@@ -10,7 +10,7 @@ spring:
 
 mybatis:
   mapper-locations: classpath:mapper/*Mapper.xml
-  type-aliases-package: com.duwen.chat.dto
+  type-aliases-package: com.du.chat.dto
 
 #showSql
 logging:

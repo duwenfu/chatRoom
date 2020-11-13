@@ -1,4 +1,4 @@
-package com.duwen.chat;
+package com.du.chat;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
